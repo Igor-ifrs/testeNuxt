@@ -50,7 +50,7 @@ export default {
 }
 .menu {
     height: 100vh;
-    width: 550px;
+    /* width: 550px; */
     position: fixed;
     top: 0;
     left: -550px;

@@ -1,13 +1,12 @@
 <template>
-    <div>
-        <!-- <Player id="qualquerId" src="https://www.w3schools.com/html/horse.mp3"></Player> -->
-        <div class="container">
-            <div class="title">
+    <div class="container">
+        <div class="title">
+            <div>
                 <div>
-                    <h1>EVERTON</h1>
-                    <h1>MEDEIROS</h1>
-                    <p>LOCUTOR PROFISSIONAL</p>
+                    <span>EVERTON</span>
+                    <span>MEDEIROS</span>
                 </div>
+                <TextSlider />
             </div>
         </div>
     </div>
@@ -25,28 +24,22 @@ export default {};
     background-image: url("~assets/img/wewe.jpg");
     background-size: cover;
     background-attachment: fixed;
-    border: greenyellow 5px solid;
+    border: seashell 5px solid;
+    overflow: hidden;
 }
 .title {
-    background-image: radial-gradient(rgba(0, 0, 0, 0.8) 40%, rgba(0, 0, 0, 0.5));
     height: 100%;
+    width: 100%;
     display: flex;
+    text-align: center;
     justify-content: center;
     align-items: center;
-    color: white;
-    text-align: center;
-    border: pink 5px solid;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.6) 10%, rgba(0, 0, 10, 0.9));
 }
-.title h1 {
-    font-weight: lighter;
-    font-size: 5rem;
-}
-.title p {
-    padding: 20px;
-    font-size: 22pt;
-    border-bottom: 4px solid seashell;
-}
-p {
-    color: goldenrod;
+span {
+    color: seashell;
+    font-family: var(--main-font);
+    font-size: 5.5rem;
+    display: block;
 }
 </style>
