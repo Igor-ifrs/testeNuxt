@@ -1,10 +1,15 @@
+/* @import url("https://fonts.googleapis.com/css2?family=Francois+One&display=swap"); */
+@import url("https://fonts.googleapis.com/css2?family=Titillium+Web:wght@200&display=swap");
 * {
     box-sizing: border-box;
     margin: 0;
     padding: 0;
 }
 html {
-    background-color: brown;
-    height: 600vh;
     scroll-behavior: smooth;
+    /* background-image: url("~assets/img/123.png"); */
+    /* background-size: cover; */
+    /* background-attachment: fixed; */
+    background-color: black;
+    font-family: "Titillium Web";
 }
