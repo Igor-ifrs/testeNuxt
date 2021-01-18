@@ -15,7 +15,7 @@
 <script>
 export default {
     data() {
-        return { isActive: true };
+        return { isActive: false };
     },
     methods: {
         toggle() {
@@ -25,7 +25,7 @@ export default {
 };
 </script>
 
-<style>
+<style scoped>
 .btn-menu-container {
     height: 100px;
     width: 100px;
@@ -59,6 +59,7 @@ export default {
     display: flex;
     flex-direction: column;
     justify-content: space-around;
+    border: red 5px solid;
 }
 .menuOpen {
     left: 0;
