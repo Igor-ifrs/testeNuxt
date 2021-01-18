@@ -1,9 +1,9 @@
 <template>
     <div class="slide">
         <div class="slide-ex">
-            <p class="ctg">LOCUTOR PROFISSIONAL</p>
-            <p class="ctg">ANUNCER FIGTH!</p>
-            <p class="ctg">RADIALISTA</p>
+            <p>LOCUTOR PROFISSIONAL</p>
+            <p>ANUNCER FIGTH!</p>
+            <p>RADIALISTA</p>
         </div>
     </div>
 </template>
@@ -13,38 +13,33 @@ export default {};
 </script>
 
 <style scoped>
-.ctg {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
 .slide {
     height: 80px;
     overflow: hidden;
 }
 .slide-ex {
-    animation: slide infinite 8s;
-    animation-timing-function: steps(5, end);
+    animation: slide infinite 9s steps(3);
 }
 @keyframes slide {
-    0% {
-        margin-top: 0px;
-    }
-    33% {
-        margin-top: -80px;
-    }
-    66% {
-        margin-top: -160px;
-    }
-    100% {
+    to {
         margin-top: -240px;
     }
 }
-p {
+.slide-ex:hover {
+    animation-play-state: paused;
+}
+.slide-ex p {
     color: seashell;
-    font-family: var(--main-font);
-    font-size: 2rem;
+    font-size: 2.2rem;
     color: goldenrod;
     height: 80px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+@media only screen and (max-width: 600px) {
+    .slide-ex p {
+        font-size: 1.5rem;
+    }
 }
 </style>

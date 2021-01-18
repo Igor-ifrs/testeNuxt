@@ -7,7 +7,7 @@
             <NuxtLink to="/">INÍCIO</NuxtLink>
             <NuxtLink to="/#exemplos">EXEMPLOS</NuxtLink>
             <NuxtLink to="/teste">GALERIA</NuxtLink>
-            <NuxtLink to="/#redes">SIGAME-ME!</NuxtLink>
+            <NuxtLink to="/#redes">SIGA-ME!</NuxtLink>
         </menu>
     </div>
 </template>
@@ -34,6 +34,7 @@ export default {
     right: 60px;
     cursor: pointer;
     transition: all 0.2s ease-in-out;
+    z-index: 1;
 }
 .btn-menu-container:hover {
     transform: scale(1.2);
@@ -50,19 +51,19 @@ export default {
 }
 .menu {
     height: 100vh;
-    /* width: 550px; */
+    width: 550px;
     position: fixed;
     top: 0;
-    left: -550px;
-    transition: left 0.5s ease-in;
+    left: 0;
+    transform: translate(-100%, 0);
+    transition: transform 0.6s cubic-bezier(0.175, 0.885, 0.32, 1.275);
     transition-delay: 0.5s;
     display: flex;
     flex-direction: column;
     justify-content: space-around;
-    border: red 5px solid;
 }
 .menuOpen {
-    left: 0;
+    transform: translate(0, 0);
 }
 .menu a {
     color: white;
@@ -74,5 +75,17 @@ export default {
 }
 a.nuxt-link-exact-active {
     opacity: 0.5;
+}
+@media only screen and (max-width: 600px) {
+    .menu {
+        background: black;
+        width: 100%;
+    }
+    .btn-menu-container {
+        height: 40px;
+        width: 40px;
+        top: 10px;
+        right: 10px;
+    }
 }
 </style>
