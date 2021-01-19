@@ -26,8 +26,8 @@ export default {};
 }
 .bg-home {
     background-size: cover;
-    background-attachment: fixed;
-    background-image: url("~assets/img/wewe.jpg");
+    background-repeat: no-repeat;
+    background-image: url("~assets/img/teste2.png");
 }
 .title {
     height: 100%;
@@ -36,7 +36,7 @@ export default {};
     text-align: center;
     justify-content: center;
     align-items: center;
-    background-image: linear-gradient(rgba(0, 0, 0, 0.6) 10%, rgba(0, 0, 10, 0.9));
+    background: radial-gradient(rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.5) 60%);
     /* overflow: hidden; */
 }
 .title div h1 {
@@ -44,6 +44,9 @@ export default {};
     font-size: 5.5rem;
     display: block;
     font-weight: lighter;
+    /* text-shadow: 2px 2px black; */
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: black;
 }
 @media only screen and (max-width: 600px) {
     .title div h1 {

@@ -51,7 +51,8 @@ export default {
 }
 .menu {
     height: 100vh;
-    width: 550px;
+    width: 100vw;
+    background: black;
     position: fixed;
     top: 0;
     left: 0;
