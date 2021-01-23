@@ -27,14 +27,14 @@ export default {
 
 <style scoped>
 .btn-menu-container {
-    height: 100px;
-    width: 100px;
+    height: 80px;
+    width: 80px;
     position: fixed;
     top: 40px;
     right: 60px;
     cursor: pointer;
-    transition: all 0.2s ease-in-out;
-    z-index: 1;
+    transition: all 0.5s linear;
+    z-index: 9999;
 }
 .btn-menu-container:hover {
     transform: scale(1.2);
@@ -57,7 +57,7 @@ export default {
     top: 0;
     left: 0;
     transform: translate(-100%, 0);
-    transition: transform 0.6s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    transition: transform 0.6s ease-in;
     transition-delay: 0.5s;
     display: flex;
     flex-direction: column;

@@ -1,21 +1,51 @@
 <template>
-    <div :id="id" class="player">
-        <audio controls :src="src"></audio>
+    <div id="player">
+        <svg width="100%" height="100vh" version="1.1" viewBox="0 0 297 210" xmlns="http://www.w3.org/2000/svg">
+            <g stroke-width=".060854">
+                <rect x="1.7789" y="155.65" width="9.1482" height="52.279" />
+                <rect x="10.927" y="155.65" width="9.1482" height="52.279" />
+                <rect x="20.075" y="155.65" width="9.1482" height="52.279" />
+                <rect x="29.223" y="155.65" width="9.1482" height="52.279" />
+                <rect x="38.372" y="155.65" width="9.1482" height="52.279" />
+                <rect x="47.52" y="155.65" width="9.1482" height="52.279" />
+                <rect x="56.668" y="155.65" width="9.1482" height="52.279" />
+                <rect x="65.816" y="155.65" width="9.1482" height="52.279" />
+                <rect x="74.964" y="155.65" width="9.1482" height="52.279" />
+                <rect x="84.113" y="155.65" width="9.1482" height="52.279" />
+                <rect x="93.261" y="155.65" width="9.1482" height="52.279" />
+                <rect x="102.41" y="155.65" width="9.1482" height="10" fill="pink" />
+                <rect x="111.56" y="155.65" width="9.1482" height="52.279" />
+                <rect x="120.71" y="155.65" width="9.1482" height="52.279" />
+                <rect x="129.85" y="155.65" width="9.1482" height="52.279" />
+                <rect x="139" y="155.65" width="9.1482" height="52.279" />
+                <rect x="139" y="155.65" width="9.1482" height="52.279" />
+                <rect x="148.15" y="155.65" width="9.1482" height="52.279" />
+                <rect x="157.3" y="155.65" width="9.1482" height="52.279" />
+                <rect x="166.45" y="155.65" width="9.1482" height="52.279" />
+                <rect x="175.59" y="155.65" width="9.1482" height="52.279" />
+                <rect x="184.74" y="155.65" width="9.1482" height="52.279" />
+                <rect x="193.89" y="155.65" width="9.1482" height="52.279" />
+                <rect x="203.04" y="155.65" width="9.1482" height="52.279" />
+                <rect x="212.19" y="155.65" width="9.1482" height="52.279" />
+                <rect x="221.34" y="155.65" width="9.1482" height="52.279" />
+                <rect x="230.48" y="155.65" width="9.1482" height="52.279" />
+                <rect x="239.63" y="155.65" width="9.1482" height="52.279" />
+                <rect x="248.78" y="155.65" width="9.1482" height="52.279" />
+                <rect x="257.93" y="155.65" width="9.1482" height="52.279" />
+                <rect x="267.08" y="155.65" width="9.1482" height="52.279" />
+                <rect x="276.22" y="155.65" width="9.1482" height="52.279" />
+                <rect x="285.37" y="155.65" width="9.1482" height="52.279" />
+            </g>
+        </svg>
     </div>
 </template>
 
 <script>
-export default {
-    props: {
-        src: String,
-        id: String,
-    },
-};
+export default {};
 </script>
 
 <style>
-.player {
-    background: turquoise;
-    height: 100px;
+#player {
+    background: blueviolet;
 }
 </style>
