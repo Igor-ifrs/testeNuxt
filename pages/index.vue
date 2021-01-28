@@ -29,21 +29,23 @@ export default {};
     height: 100%;
     width: 100%;
     overflow: hidden;
+    background: rgba(0, 0, 0, 0.5);
 }
 .title h1 {
-    font-size: 8rem;
+    font-size: 10rem;
     font-weight: lighter;
+    /* color: #f10001; */
     color: seashell;
-    text-shadow: black 2px 2px;
+    text-shadow: #f10001 2px 2px;
 }
 .title {
     text-align: center;
     position: absolute;
     top: 50%;
     left: 50%;
-    transform: translate(-10%, -50%);
+    transform: translate(-50%, -65%);
     padding: 20px;
-    border-bottom: 5px solid seashell;
+    /* border-bottom: 5px solid seashell; */
 }
 @media only screen and (max-width: 600px) {
     .title h1 {
